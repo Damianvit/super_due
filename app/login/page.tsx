@@ -30,8 +30,7 @@ export default function Login({
                 : process.env.VERCEL_BASE_URL;
 
         return redirect(`${baseUrl}/protected`);
-        return redirect("/protected");
-    };
+     };
 
     const signUp = async (formData: FormData) => {
         "use server";
